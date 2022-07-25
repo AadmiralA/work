@@ -13,7 +13,7 @@ a{
 }
 
 .container{
-    max-width: 1220px;
+    max-width: 1420px;
     padding: 0 10px;
     margin: 0 auto;
 }
@@ -24,10 +24,11 @@ body{
     line-height: 19px;
     font-family: 'Roboto Condensed', sans-serif;
     font-weight: 400;
+    margin: 0;
 }
 
 .header{
-    background: rgb(0, 98, 255);
+    background: rgb(13, 100, 239);
 }
 
 .header__inner{
@@ -48,7 +49,7 @@ body{
 
 .menu__list-link{
     color: #fefefe;
-    font-size: 18px;
+    font-size: 19px;
     line-height: 21px;
     padding-bottom: 5px;
     transition: all .5s;
@@ -61,28 +62,30 @@ body{
 
 .phone{
     color: #fefefe;
-    font-size: 18px;
+    font-size: 19px;
     line-height: 21px;
 }
 
 
 .top__heading{
     display: flex;
-    padding-top: 50px;
+}
+
+.top__image-slider{
+    background:linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.2)), url(image/lk.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
 }
 
 .top__slider{
-    height: 440px;
-}
-
-.top__slider div{
-    float: left;
+    min-height: 600px;
 }
 
 .top__content{
     text-align: center;
-    padding-top: 30px;
-    width: 50%;
+    padding-top: 80px;
+    width: 35%;
 }
 
 .top__title{
@@ -92,6 +95,7 @@ body{
     line-height: 58px;
     margin: 0 auto 20px;
     max-width: 455px;
+    color: rgb(250, 246, 246);
 }
 
 .top__text{
@@ -99,6 +103,7 @@ body{
     line-height: 28px;
     margin: 0 auto 50px;
     max-width: 470px;
+    color: rgb(240, 235, 235);
 }
 
 .application{
@@ -116,13 +121,6 @@ body{
     border: 1px solid #c5ac2d;
 }
 
-.top__photo{
-    width: 50%;
-}
-
-.top__photo-images{
-    width: 100%;
-}
 
 .top__heading .slick-dots{
     position: absolute;
@@ -143,15 +141,62 @@ body{
 
 .slick-dots button{
     font-size: 0;
-    width: 10px;
-    height: 10px;
-    background-color: #332208;
+    width: 90px;
+    height: 5px;
+    background-color: #dddddd;
     border: none;
-    border-radius: 50%;
+    border-radius: 17%;
     padding: 0;
 }
 
 .slick-active button{
-    width: 18px;
-    height: 18px;
+    width: 90px;
+    height: 5px;
+    background-color: #ffffff;
+    padding-bottom: 7px;
+    border-radius: 17%;
+    border: none;
+}
+
+
+.news__name{
+    text-align: center;
+    font-size: 34px;
+    margin-top: 70px;
+    font-family: 'Fira Sans', sans-serif;
+    line-height: 20px;
+    font-weight: 500;
+    padding-bottom: 30px;
+}
+
+.news__heading-parent{
+    display: flex;
+    justify-content: space-between;
+}
+
+.news__heading-parent div{
+    width: 28%;
+    border: 2px solid rgb(13, 100, 239);
+    cursor: pointer;
+    transition: all .5s;
+    padding-left: 20px;
+    border-top: 0;
+    border-bottom: 0;
+}
+
+.news__heading-parent div:hover{
+    transform: scale(1.20);
+}
+
+.news__title{
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 23px;
+    line-height: 28px;
+    font-weight: 500;
+    max-width: 200px;
+}
+
+.news__content{
+    font-size: 19px;
+    max-width: 330px;
 }
